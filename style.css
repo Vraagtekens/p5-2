@@ -1,8 +1,49 @@
 html, body {
     margin: 0;
     padding: 0;
-}
-canvas {
-    display: block;
+    height: 100%;
+    overflow: hidden;
 }
 
+
+/* sketch box */
+.main-frame-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#frame{
+    width: 600px;
+    height: 600px;
+}
+
+@media only screen and (max-width: 599px){
+    #frame{
+        width: 400px;
+        height: 400px;
+    } 
+}
+
+@media only screen and (max-width: 399px){
+    #frame{
+        width: 300px;
+        height: 300px;
+    } 
+}
+
+
+/* sketch */
+#frame canvas{
+    border-radius: 1px;
+}
+
+.title, .bio{
+    margin: 5px;
+}
+
+.title{
+    font-size: 40px;
+
+}
